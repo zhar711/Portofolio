@@ -143,7 +143,7 @@ const Detail = () => {
                   <br />
                   <a
                     style={{ color: "gray" }}
-                    href="https://github.com/zhar711"
+                    href="https://github.com/evialf/Grup-Project3-Kelompok4"
                     target="/blank2"
                   >
                     e-Store<span> </span>
