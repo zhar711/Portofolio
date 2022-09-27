@@ -1,0 +1,379 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2c2c2c;
+  font-family: Montserrat, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  min-height: 100vh;
+  margin: 0;
+}
+
+h3 {
+  margin: 10px 0;
+}
+
+h6 {
+  margin: 5px 0;
+  font-size: smaller;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+a {
+  color: cyan;
+}
+
+.card-container {
+  background-color: #1d1d1d;
+  border-radius: 5px;
+  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+  color: #b3b8cd;
+  padding-top: 30px;
+  position: relative;
+  width: 350px;
+  max-width: 100%;
+  text-align: center;
+}
+
+.card-container .pro {
+  color: #b4b4b4;
+  background-color: #272626;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 3px 7px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.card-container .round {
+  border: 2px solid #525252;
+  border-radius: 50%;
+  padding: 7px;
+}
+
+button.primary {
+  background-color: #1d1d1d;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  color: #aaaaaa;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  padding: 10px 25px;
+}
+
+.skills {
+  background-color: #141414;
+  text-align: center;
+  padding: 10px;
+}
+
+.skills ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skills ul li {
+  border: 1px solid #2d2747;
+  border-radius: 2px;
+  display: inline-block;
+  font-size: 12px;
+  margin: 0 7px 7px 0;
+  padding: 7px;
+}
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+.social-container {
+  text-align: center;
+  margin-left: -2vw;
+}
+
+.social-icons {
+  padding: 2;
+  list-style: none;
+  margin: 1em;
+}
+.social-icons li {
+  display: inline-block;
+  margin: 0.15em;
+  position: relative;
+  font-size: 1.2em;
+}
+.social-icons i {
+  color: #fff;
+  position: absolute;
+  top: 21px;
+  left: 21px;
+  transition: all 265ms ease-out;
+}
+.social-icons a {
+  display: inline-block;
+}
+.social-icons a:before {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  content: " ";
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  display: block;
+  background: linear-gradient(45deg, #646464, #0c0c0c);
+  transition: all 265ms ease-out;
+}
+.social-icons a:hover:before {
+  transform: scale(0);
+  transition: all 265ms ease-in;
+}
+.social-icons a:hover i {
+  transform: scale(2.2);
+  -ms-transform: scale(2.2);
+  -webkit-transform: scale(2.2);
+  color: #535353;
+  background: -webkit-linear-gradient(45deg, #00d0f5, #007a8f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 265ms ease-in;
+}
+
+/* BUTTON */
+
+.button2 {
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #bebebe;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  margin: 25px;
+  font-family: "Roboto", sans-serif;
+  filter: hue-rotate(0deg);
+  border: 2px solid #292929;
+  transition: all 0.1s linear;
+}
+.button2:hover {
+  border: 1px solid transparent;
+}
+.button2:hover span {
+  position: absolute;
+  display: block;
+}
+.button2:hover span:nth-child(1) {
+  filter: hue-rotate(0deg);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #000);
+  animation: animate1 1s linear infinite;
+}
+@keyframes animate1 {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+.button2:hover span:nth-child(2) {
+  filter: hue-rotate(60deg);
+  top: -100%;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #3a86ff);
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+@keyframes animate2 {
+  0% {
+    top: -100%;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+.button2:hover span:nth-child(3) {
+  filter: hue-rotate(120deg);
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background: linear-gradient(270deg, transparent, #3a86ff);
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+@keyframes animate3 {
+  0% {
+    right: -100%;
+    height: 3px;
+  }
+  50%,
+  100% {
+    height: 2px;
+    right: 100%;
+  }
+}
+.button2:hover span:nth-child(4) {
+  filter: hue-rotate(300deg);
+  bottom: -100%;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #3a86ff);
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+@keyframes animate4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+
+/* BUTTON DOWNLOAD */
+@-webkit-keyframes orbit {
+  0% {
+    -webkit-transform: rotateY(90deg) rotate(0deg);
+  }
+  60% {
+    -webkit-transform: rotateY(90deg) rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotateY(90deg) rotate(-360deg);
+  }
+}
+@-moz-keyframes orbit {
+  0% {
+    -moz-transform: rotateY(90deg) rotate(0deg);
+  }
+  60% {
+    -moz-transform: rotateY(90deg) rotate(-180deg);
+  }
+  100% {
+    -moz-transform: rotateY(90deg) rotate(-360deg);
+  }
+}
+@keyframes orbit {
+  0% {
+    -webkit-transform: rotateY(90deg) rotate(0deg);
+    -moz-transform: rotateY(90deg) rotate(0deg);
+    -ms-transform: rotateY(90deg) rotate(0deg);
+    -o-transform: rotateY(90deg) rotate(0deg);
+    transform: rotateY(90deg) rotate(0deg);
+  }
+  60% {
+    -webkit-transform: rotateY(90deg) rotate(-180deg);
+    -moz-transform: rotateY(90deg) rotate(-180deg);
+    -ms-transform: rotateY(90deg) rotate(-180deg);
+    -o-transform: rotateY(90deg) rotate(-180deg);
+    transform: rotateY(90deg) rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotateY(90deg) rotate(-360deg);
+    -moz-transform: rotateY(90deg) rotate(-360deg);
+    -ms-transform: rotateY(90deg) rotate(-360deg);
+    -o-transform: rotateY(90deg) rotate(-360deg);
+    transform: rotateY(90deg) rotate(-360deg);
+  }
+}
+
+.button {
+  display: inline-block;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  position: relative;
+  padding: 20px 30px 20px 70px;
+  background: rgba(65, 65, 65, 0.6);
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+.button:hover {
+  -webkit-transform: translateY(-5px);
+  -moz-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  -o-transform: translateY(-5px);
+  transform: translateY(-5px);
+  color: rgba(0, 0, 0, 0.8);
+  background: rgba(172, 172, 172, 0.8);
+}
+.button:hover > span {
+  -webkit-transition: all 800ms ease-in-out;
+  -moz-transition: all 800ms ease-in-out;
+  transition: all 800ms ease-in-out;
+  -webkit-transform: rotateY(90deg) rotate(-360deg);
+  -moz-transform: rotateY(90deg) rotate(-360deg);
+  -ms-transform: rotateY(90deg) rotate(-360deg);
+  -o-transform: rotateY(90deg) rotate(-360deg);
+  transform: rotateY(90deg) rotate(-360deg);
+}
+.button > span {
+  width: 80px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -40px;
+  bottom: -40px;
+  border-radius: 50%;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: rotateY(90deg) rotate(0deg);
+  -moz-transform: rotateY(90deg) rotate(0deg);
+  -ms-transform: rotateY(90deg) rotate(0deg);
+  -o-transform: rotateY(90deg) rotate(0deg);
+  transform: rotateY(90deg) rotate(0deg);
+}
+.button > span > span {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  width: 16px;
+  height: 17px;
+  left: 0;
+  top: 50px;
+  -webkit-transform: rotateY(-90deg);
+  -moz-transform: rotateY(-90deg);
+  -ms-transform: rotateY(-90deg);
+  -o-transform: rotateY(-90deg);
+  transform: rotateY(-90deg);
+}
+.button > span > span::before {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  margin-left: -7px;
+  border-top: 16px solid rgba(0, 0, 0, 0.6);
+  border-bottom: 0 solid transparent;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+}
